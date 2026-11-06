@@ -1,0 +1,7 @@
+أضف alias داخل ->withMiddleware في bootstrap/app.php (Laravel 11/12):
+
+->withMiddleware(function (Illuminate\Foundation\Configuration\Middleware $middleware) {
+    $middleware->alias([
+        'role' => App\Http\Middleware\EnsureRole::class,
+    ]);
+})

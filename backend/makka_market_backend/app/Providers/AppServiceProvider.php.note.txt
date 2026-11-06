@@ -1,0 +1,1 @@
+إذا لم يكن Laravel Broadcasting مفعّلاً تلقائياً، تأكد من تسجيل routes/channels.php ضمن إعدادات broadcasting في مشروعك. راجع إعدادات install:broadcasting في إصدار Laravel المستخدم.

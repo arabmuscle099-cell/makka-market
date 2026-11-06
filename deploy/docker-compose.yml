@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: makka-market-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: makka_market
+      POSTGRES_USER: makka_user
+      POSTGRES_PASSWORD: CHANGE_THIS_STRONG_PASSWORD
+    ports:
+      - "5432:5432"
+    volumes:
+      - makka_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U makka_user -d makka_market"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  makka_pgdata:
