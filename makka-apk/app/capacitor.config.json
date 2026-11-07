@@ -1,0 +1,12 @@
+{
+  "appId": "com.makkamarket.app",
+  "appName": "مكّة ماركت",
+  "webDir": "www",
+  "server": {
+    "url": "https://makka-market-store.pages.dev",
+    "cleartext": false
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}
