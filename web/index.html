@@ -71,6 +71,10 @@ html[data-theme=dark] #store .pc .orange,html[data-theme=dark] .sheet .pc .orang
 html[data-theme=dark] #store .skc,html[data-theme=dark] .sheet .skc{background:linear-gradient(90deg,#16221b 25%,#1f3027 37%,#16221b 63%);background-size:400% 100%}
 html[data-theme=dark] .pimg:has(img),html[data-theme=dark] .dimg:has(img){background:linear-gradient(90deg,#16221b 25%,#1f3027 37%,#16221b 63%);background-size:400% 100%}
 
+
+/* إصلاح: في وضع الجهاز الداكن كانت حقول الإدارة والدخول بيضاء بكتابة بيضاء (مش باينة) */
+#app,#login,#courier{color-scheme:light}
+input,select,textarea{color:#17251e}textarea{background:#fff}
 </style>
 </head>
 <body><div id="adminToast"></div>
